@@ -1,0 +1,284 @@
+/* VARIABLES */
+
+
+
+/* GENERAL */
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  height:100vh;
+  background-color:#f1f1f1;
+  margin:0 auto;
+}
+header{
+  width:100%;
+  height:100px;
+  background-color:#999;
+  text-align:center;
+  text-transform: uppercase;
+  padding:20px;
+}
+main{
+  max-width:600px;
+  min-height:70vh;
+  border:1px solid #999;
+  border-radius:5px;
+  margin: 20px auto;
+}
+footer{
+  width:100%;
+  height:100px;
+  background-color:#999;
+}
+nav a{
+  font-size:14px;
+}
+a{
+  text-decoration: none;
+  color: #555;
+  padding:5px 10px;
+}
+h1{
+  margin-bottom:20px;
+}
+h2{
+  margin-bottom:20px;
+}
+
+
+/* INDEX */
+
+#allProducts{
+  margin:20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .products{
+    width:250px;
+    border: 1px solid #333;
+    border-radius:5px;
+    margin:10px auto;
+    text-align:center;
+  }
+
+  .product{
+    margin:10px 0;
+  }
+
+  .image{
+    width:150px;
+    height:100px;
+    margin:0 auto;
+  }
+
+  .price{
+    margin: 10px 0;
+  }
+
+  .btn{
+    background-color:#007ac1;
+    padding:5px 10px;
+    border:none;
+    border-radius:3px;
+    margin: 10px auto;
+
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+
+  }
+
+
+}
+
+/* PRODUITS */
+
+.woodProduct{
+  width:100%;
+  text-align:center;
+
+  .productName{
+    font-size: 25px;
+    font-weight: bold;
+    margin:20px;
+  }
+  .productDescription, .productVanish, .productPrice{
+    width:90%;
+    margin:20px auto;
+    text-align:left;
+  }
+  .productImage{
+    width:80%;
+    margin:0 auto;
+    border:1px solid #777;
+    border-radius:5px;
+  }
+
+  .allBtn{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn{
+      background-color:#007ac1;
+      padding:5px 10px;
+      border:none;
+      border-radius:3px;
+      margin: 10px auto;
+
+      a{
+        text-decoration: none;
+        color: #333;
+      }
+
+    }
+  }
+
+  .error{
+    font-size: 16px;
+    color:red;
+    padding: 5px 0;
+  }
+}
+
+#modal{
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0px;
+  left:0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20% 0;
+  display:none;
+
+  .container{
+    margin-top: 20%;
+    width:300px;
+    text-align: center;
+    background-color:#fff;
+    border:1px solid #555;
+    border-radius:5px;
+    padding:25px;
+    margin:0 auto;
+
+    h3, p{
+      padding:10px;
+    }
+  }
+}
+
+/* PANIER */
+
+.panier{
+  margin-top:30px;
+  padding:10px;
+  text-align:center;
+
+  .newPanier{
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    td,th{
+      padding:10px;
+      border:1px solid #444;
+    }
+
+    .btnPlus, .btnMoins{
+      border:none;
+      border:1px solid #555;
+      border-radius:3px;
+      padding:1px 5px;
+      margin: 0 5px;
+      cursor: pointer;
+      transition:0.2s;
+
+      :hover{
+        background-color:#777;
+      }
+    }
+  }
+}
+
+.contact{
+  width:100%;
+  padding:20px;
+
+  hr{
+    width:80%;
+    margin:0 auto;
+    margin-top:30px;
+    border:none;
+    border:1px solid #777;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    .champ{
+      width:200px;
+      padding:10px;
+
+      input{
+        margin-top:5px;
+        padding:3px;
+      }
+
+      .btn{
+        background-color:#007ac1;
+        padding:5px 10px;
+        border:none;
+        border-radius:3px;
+        margin: 10px auto;
+
+        a{
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+/* CONFIRMATION */
+
+.result{
+  width:100%;
+  padding:20px;
+  font-size:16px;
+
+  p{
+    span{
+      text-transform: uppercase;
+      font-size:20px;
+      font-weight:bold;
+      line-height:40px;
+    }
+  }
+}
+
+.recap{
+  text-align:center;
+
+
+
+  .newPanier{
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    td,th{
+      padding:10px;
+      border:1px solid #444;
+    }
+
+  }
+}
