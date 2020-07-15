@@ -148,6 +148,27 @@ if(woods == null || woods == ''){
 
     // FORMULAIRE
 
+    // fonction vérifie sur les entrées sur les inputs sont bon
+    function checkValue(data)
+    {
+      const error = document.querySelector('.error');
+      error.innerHTML = '';
+      //[^0-9a-zA-Z *]
+      let regex = /[~`!#$%\^&*+=\-\[\]\';,/{}|\":<>\?0123456789 ]/;
+      let regexAddress = /[~`!#$%\^&*+=\-\[\]\';/{}|\":<>\?]/;
+
+      if(data.firstName.match(regex) || data.lastName.match(regex) || data.address.match(regexAddress) || data.address == ' '  || data.city.match(regex))
+      {
+        error.innerHTML += 'Veuillez remplir correctement les champs avec des lettres';
+        return false;
+      }
+      else{
+          return true;
+      }
+
+    }
+
+
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
       //console.log("bloqué");
@@ -162,9 +183,12 @@ if(woods == null || woods == ''){
         },
         products
       }
-      console.log(data);
-      let url = 'http://localhost:3000/api/furniture/order';
-      ajaxPost(url, data, callback, true);
+
+      if(checkValue(data.contact) == true){
+        let url = 'http://localhost:3000/api/furniture/order';
+        ajaxPost(url, data, callback, true);
+      }
+
     });
 
     //fonction callback
