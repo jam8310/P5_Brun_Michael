@@ -9,7 +9,7 @@ let total = 0;
 let product = '';
 let products = [];
 
-if(woods == null){
+if(woods == null || woods == ''){
   panier.innerHTML = "Votre Panier est vide ! ";
   contact.innerHTML = '';
 }else{

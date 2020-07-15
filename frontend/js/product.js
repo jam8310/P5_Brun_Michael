@@ -18,7 +18,7 @@ const varnish = (wood) =>{
 
 
   }
-  
+
   return result;
 }
 
@@ -47,7 +47,7 @@ fetch('http://localhost:3000/api/furniture')
         <div class="productPrice"><h2>Prix : </h2>${woodProduct[i].price/100} €</div>
         <div class="allBtn">
           <button class="btn"><a href="./index.html">Retour</a></button>
-          <button class="btn panier" id="panier"><a href="./panier.html">Ajouter au panier</a></button>
+          <button class="btn" id="panier"><a href="./panier.html">Ajouter au panier</a></button>
         </form>` ;
 
 
@@ -56,7 +56,7 @@ fetch('http://localhost:3000/api/furniture')
   }
 
   const choix = document.querySelectorAll('.choix');
-  const panier = document.querySelector('.panier');
+  const panier = document.querySelector('#panier');
   const modal = document.querySelector('#modal');
 
   let validChoix = "";

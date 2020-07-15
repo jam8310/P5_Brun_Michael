@@ -1,4 +1,16 @@
-/* VARIABLES */
+/* EXTEND */
+
+.btn{
+  background-color:#007ac1;
+  padding:5px 10px;
+  border:none;
+  border-radius:3px;
+  margin: 10px auto;
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+}
 
 
 
@@ -79,20 +91,6 @@ h2{
     margin: 10px 0;
   }
 
-  .btn{
-    background-color:#007ac1;
-    padding:5px 10px;
-    border:none;
-    border-radius:3px;
-    margin: 10px auto;
-
-    a{
-      text-decoration: none;
-      color: #333;
-    }
-
-  }
-
 
 }
 
@@ -131,13 +129,12 @@ h2{
       border:none;
       border-radius:3px;
       margin: 10px auto;
-
       a{
         text-decoration: none;
         color: #333;
       }
-
     }
+
   }
 
   .error{
@@ -233,18 +230,6 @@ h2{
         padding:3px;
       }
 
-      .btn{
-        background-color:#007ac1;
-        padding:5px 10px;
-        border:none;
-        border-radius:3px;
-        margin: 10px auto;
-
-        a{
-          text-decoration: none;
-          color: #333;
-        }
-      }
     }
   }
 }
