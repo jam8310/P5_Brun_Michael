@@ -1,14 +1,17 @@
-// fonction pour la création du vernis dans le localStorage
+// fonction pour la création du tableau dans le localStorage
 const items = ()=>{
 
-  let total = '';
+  // Créations des variables
+  let total = 0;
   let items = [];
-  let woods = JSON.stringify(items);
 
+  // Enregistrment dans le localStorage
+  let woods = JSON.stringify(items);
   localStorage.setItem ("woods", woods);
   localStorage.setItem ("total", total);
 
 }
+
 
 if(localStorage.woods == undefined){
 

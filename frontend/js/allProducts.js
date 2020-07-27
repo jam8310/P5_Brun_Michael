@@ -1,5 +1,5 @@
 
-
+// Récupération des produits sur l'API
 fetch('http://localhost:3000/api/furniture')
 .then(response => response.json())
 .then(products => {
