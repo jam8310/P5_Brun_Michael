@@ -48,6 +48,8 @@ if(woods == null || woods == ''){
     }
   }
     chargement();
+    let totals = JSON.stringify(total);
+    localStorage.setItem("total", totals);
 
     const btnPlus = document.querySelectorAll(".btnPlus");
     const btnMoins = document.querySelectorAll(".btnMoins");

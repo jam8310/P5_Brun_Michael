@@ -1,8 +1,10 @@
 const result = document.querySelector('.result');
 const recap = document.querySelector('.recap');
 
+let price = '';
 
 let commande = JSON.parse(localStorage.getItem("commande"));
+let total = JSON.parse(localStorage.getItem("total"));
 if(commande == null){
   result.innerHTML += `<p>
     Vous n'avez pas de commande en cours!
@@ -34,6 +36,10 @@ if(commande == null){
           <th>Nom du produit</th>
         </tr>
         ${product}
+        <tr>
+          <td>Total</td>
+          <td>${total} €</td>
+        </tr>
 
       </table>`;
 
@@ -42,5 +48,6 @@ if(commande == null){
 
   localStorage.removeItem("commande");
   localStorage.removeItem("woods");
+  localStorage.removeItem("total");
 
 }
